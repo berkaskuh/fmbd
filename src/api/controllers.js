@@ -72,7 +72,7 @@ const getFembedSource = async (url, next) => {
       }
     });
 
-    while (await page.$('#loading') && !await page.$('.jwplayer')) {
+    while (await page.$('#loading') && !await page.$('.jw-video jw-reset')) {
       await page.click('#loading')
     }
 
